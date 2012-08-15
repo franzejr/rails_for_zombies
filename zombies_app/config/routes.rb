@@ -1,4 +1,8 @@
 ZombiesApp::Application.routes.draw do
+  resources :tweets
+
+  resources :zombies
+
   #get "home/index"
 
   # The priority is based upon order of creation:
