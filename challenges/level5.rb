@@ -31,3 +31,9 @@ RailsForZombies::Application.routes.draw do
   resources :zombies
   root :to => 'Zombies#index'
 end
+
+#Challenge 5
+
+RailsForZombies::Application.routes.draw do
+  match "zombies/:name" => "Zombies#index", :as=> "graveyard"
+end
